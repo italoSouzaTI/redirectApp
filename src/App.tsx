@@ -2,7 +2,7 @@ import "./App.css";
 import { useEffect } from "react";
 function App() {
     useEffect(() => {
-        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const userAgent = navigator.userAgent || navigator.vendor;
         console.log(userAgent);
         // Detect iOS devices
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {

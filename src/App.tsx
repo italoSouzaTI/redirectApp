@@ -6,7 +6,7 @@ declare global {
         MSStream?: any;
     }
 }
-function App({ FB }: Window) {
+function App() {
     useEffect(() => {
         const userAgent = navigator.userAgent || navigator.vendor;
         console.log(userAgent);

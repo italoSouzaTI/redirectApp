@@ -1,6 +1,5 @@
 import "../../App.css";
 import LogoGeral from "../../assets/GERAL.svg";
-import LogoLogistica from "../../assets/LOGISTICA.svg";
 import LogoTransporte from "../../assets/TRANSPORTE.svg";
 import { Link } from "react-router";
 declare global {
@@ -29,12 +28,6 @@ export function Home() {
                     <span className="textCuston">Motorista</span>
                 </Link>
             </div>
-            {/* <div className="card" >
-            <Link to="/AppImobilizado">
-                <img src={LogoLogistica} alt="Logo Logística" />
-                <span className="textCuston">Auditoria</span>
-                </Link>
-            </div> */}
         </div>
     );
 }

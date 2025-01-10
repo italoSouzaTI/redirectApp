@@ -50,6 +50,21 @@ function App() {
             window.location.href = "https://www.google.com";
         }
     }
+    function handleAuditoria() {
+        const userAgent = navigator.userAgent || navigator.vendor;
+        // if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        //     window.location.href = "https://apps.apple.com/us/app/coimbra-motorista/id6450483010";
+        // }
+        // Detecta dispositivos Android
+        if (/android/i.test(userAgent)) {
+            window.location.href = "https://play.google.com/store/apps/details?id=com.coimbra.auditoria";
+        }
+        // Redireciona para uma página de fallback ou mostra uma mensagem
+        else {
+            window.location.href = "https://www.google.com";
+        }
+    }
+
     return (
         <div className="container">
             <div className="card" onClick={handleImobilizado}>
@@ -57,12 +72,16 @@ function App() {
                 <span className="textCuston">Imobilizado</span>
             </div>
             <div className="card" onClick={handleGestaoMotorista}>
-                <img src={LogoLogistica} alt="Logo Logística" />
+                <img src={LogoTransporte} alt="Logo Transporte" />
                 <span className="textCuston">Supervisor Motorista</span>
             </div>
             <div className="card" onClick={handleMotorista}>
                 <img src={LogoTransporte} alt="Logo Transporte" />
                 <span className="textCuston">Motorista</span>
+            </div>
+            <div className="card" onClick={handleAuditoria}>
+                <img src={LogoLogistica} alt="Logo Logística" />
+                <span className="textCuston">Auditoria</span>
             </div>
         </div>
     );

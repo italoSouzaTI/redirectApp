@@ -7,7 +7,7 @@ export function DefaultRoutes() {
         <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<AppMotorista />} path="/AppMotorista" />
-            <Route element={<AppGestaoMotorista />} path="/AppGestãoMotorista" />
+            <Route element={<AppGestaoMotorista />} path="/AppGestaoMotorista" />
             <Route element={<AppImobilizado />} path="/appImobilizado" />
             {/*<Route Component={} path="/appColetor" />
             <Route Component={} path="/appAuditoria" /> */}

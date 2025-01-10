@@ -1,5 +1,9 @@
 import { useEffect } from "react";
-
+declare global {
+    interface Window {
+        MSStream?: any;
+    }
+}
 export function AppImobilizado() {
     function handleImobilizado() {
         const userAgent = navigator.userAgent || navigator.vendor;

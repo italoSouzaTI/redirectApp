@@ -2,11 +2,6 @@ import "../../App.css";
 import LogoGeral from "../../assets/GERAL.svg";
 import LogoTransporte from "../../assets/TRANSPORTE.svg";
 import { Link } from "react-router";
-declare global {
-    interface Window {
-        MSStream?: any;
-    }
-}
 export function Home() {
     return (
         <div className="container">

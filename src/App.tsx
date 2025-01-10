@@ -1,5 +1,4 @@
 import "./App.css";
-import { useEffect } from "react";
 import LogoGeral from "./assets/GERAL.svg";
 import LogoLogistica from "./assets/LOGISTICA.svg";
 import LogoTransporte from "./assets/TRANSPORTE.svg";

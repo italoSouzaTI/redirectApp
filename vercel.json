@@ -1,0 +1,21 @@
+{
+    "cleanUrls": true,
+    "rewrites": [
+        {
+            "source": "/AppMotorista",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/AppGestaoMotorista",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/appImobilizado",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/",
+            "destination": "/index.html"
+        }
+    ]
+}
